@@ -1,0 +1,7 @@
+services:
+    pizza_core.locale_listener:
+        class: pizzaminded\CoreBundle\EventListener\LocaleRequestListener
+        arguments: [ '@router' ]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request }
+

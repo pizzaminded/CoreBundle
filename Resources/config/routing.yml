@@ -1,0 +1,3 @@
+pizza_core_locale_redirect:
+    path:      /
+    defaults:  { _controller: pizzaCoreBundle:Locale:index }
