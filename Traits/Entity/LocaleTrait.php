@@ -2,6 +2,8 @@
 
 namespace pizzaminded\CoreBundle\Traits\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 /**
  * Trait LocaleTrait
  * @package pizzaminded\CoreBundle\Traits\Entity
@@ -35,7 +37,7 @@ trait LocaleTrait
      */
     public function setLocale(string $locale)
     {
-        $this->locale = $locale;
+        $this->locale = strtoupper($locale);
         return $this;
     }
 

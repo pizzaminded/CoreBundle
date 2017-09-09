@@ -2,6 +2,9 @@
 
 namespace pizzaminded\CoreBundle\Traits\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Trait TitleTrait
  * @package pizzaminded\CoreBundle\Traits\Entity
